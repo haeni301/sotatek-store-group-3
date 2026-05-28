@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechVolt | E-Commerce Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1 class="logo">Tech<span>Volt</span></h1>
+            <div class="cart-icon-container">
+                <button id="cart-btn" class="cart-btn">
+                    🛒 Giỏ hàng (<span id="cart-count">0</span>)
+                </button>
+                
+                <div id="cart-dropdown" class="cart-dropdown hidden">
+                    <h3>Giỏ hàng của bạn</h3>
+                    <div id="cart-items-list"></div>
+                    <div class="cart-total">Tổng tiền: $<span id="cart-total-price">0.00</span></div>
+                    
+                    <div class="cart-actions">
+                        <button id="clear-cart-btn" class="clear-cart-btn">Xóa hết</button>
+                        <button id="checkout-btn" class="checkout-btn">Thanh toán</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2 class="section-title">Sản phẩm công nghệ mới nhất</h2>
+        
+        <div id="product-grid" class="product-grid">
+            <div id="loading-indicator" style="grid-column: 1/-1; text-align: center; color: #777; padding: 40px;">
+                Đang tải sản phẩm...
+            </div>
+        </div>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
