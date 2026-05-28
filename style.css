@@ -9,8 +9,8 @@
 }
 
 body {
-    background-color: #f4f7f6;
-    color: #333;
+    background-color: #431dee;
+    color: #34c9b7;
 }
 
 .container {
@@ -21,7 +21,7 @@ body {
 
 /* Header & Navbar */
 header {
-    background-color: #1a1a24;
+    background-color: #111115;
     color: #fff;
     padding: 15px 0;
     position: sticky;
@@ -45,7 +45,7 @@ header {
 }
 
 .logo span {
-    color: #00adb5;
+    color: #f025e9;
 }
 
 /* Cart Dropdown Menu */
