@@ -35,8 +35,14 @@ function renderProducts() {
     products.forEach(product => {
         const productCard = document.createElement('div');
         productCard.classList.add('product-card');
+        const imageMarkup = product.image
+            ? `<img src="${product.image}" alt="${product.name}" loading="lazy" onerror="this.hidden=true; this.nextElementSibling.hidden=false;">`
+            : '';
         productCard.innerHTML = `
-            <div class="product-image">${product.emoji}</div>
+            <div class="product-image">
+                ${imageMarkup}
+                <span class="product-image-fallback" ${product.image ? 'hidden' : ''}>${product.emoji || '📦'}</span>
+            </div>
             <div class="product-info">
                 <div>
                     <h3 class="product-name">${product.name}</h3>
