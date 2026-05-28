@@ -149,7 +149,7 @@ checkoutBtn.addEventListener('click', () => {
     const totalCost = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
     
     // Tạo thông báo đơn hàng đơn giản hiển thị cho khách
-    let message = `🎉 Cảm ơn bạn đã mua sắm tại TechVolt!\n\n`;
+    let message = `🎉 Cảm ơn bạn đã mua sắm tại HaStore!\n\n`;
     message += `Chi tiết đơn hàng của bạn:\n`;
     cart.forEach(item => {
         message += `- ${item.name} (x${item.quantity}): $${(item.price * item.quantity).toFixed(2)}\n`;
